@@ -1,8 +1,6 @@
 // Arquivo: config/admin.js
 
 module.exports = ({ env }) => ({
-  url: 'https://automatiza-ai-strapi.hpnoqv.easypanel.host/admin',
-
   auth: {
     secret: env('ADMIN_JWT_SECRET'),
   },
@@ -22,3 +20,4 @@ module.exports = ({ env }) => ({
     promoteEE: env.bool('FLAG_PROMOTE_EE', true),
   },
 });
+
